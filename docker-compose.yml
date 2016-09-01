@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  app:
+    restart: always
+    build: app
+    container_name: knowledge
+    ports:
+      - 8090:8080
+    volumes:
+      - ./volumes/knowledge:/root/.knowledge
+    networks:
+      - default
+      - mynetwork
+
+networks:
+  mynetwork:
+    external: true
