@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><connectionConfig><autocommit>false</autocommit><driverClass>org.postgresql.Driver</driverClass><maxConn>0</maxConn><name>custom</name><password>password</password><schema>public</schema><URL>jdbc:postgresql://db/knowledge_production</URL><user>knowledge</user></connectionConfig>

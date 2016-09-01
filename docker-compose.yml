@@ -1,6 +1,17 @@
 version: '2'
 
 services:
+  db:
+    restart: always
+    image: sameersbn/postgresql:9.4-22
+    volumes:
+    - ./volumes/postgresql:/var/lib/postgresql:Z
+    environment:
+    - DB_USER=knowledge
+    - DB_PASS=password
+    - DB_NAME=knowledge_production
+    - DB_EXTENSION=pg_trgm
+
   app:
     restart: always
     build: app
